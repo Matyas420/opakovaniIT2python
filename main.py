@@ -1,3 +1,5 @@
+import random
+
 # Číslo 1. Proměna jméno
 jmeno = "Matyas"
 
@@ -29,15 +31,12 @@ while cyklus < 5:
 
 # Číslo 9. Podmínka pro uživatele ať zadá věk 1 a program odpoví "Děkuji"
 vek = int(input("Zadejte věk 1: "))
-if vek == 1:
+if vek == :
     print("Děkuji")
-
-# Číslo 9,5. Pokud uživatel zadá jinou celočíselnou hodnotu, vypíše mu to "Zadej jen celočíselnou hodnotu"
 else:
     print("Zadej jen celočíselnou hodnotu.")
 
 # Číslo 10. 
-import random
 cisla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(random.choice(cisla))
 
