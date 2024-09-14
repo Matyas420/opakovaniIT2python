@@ -18,26 +18,39 @@ print(len("jmeno" + "prijmeni"))
 # Číslo 6. Uložení hodnotu 6 do proměné
 cislo = 6 
 
-# Číslo 7. Cyklus se opakuje dokud není roven 5 do té doby se do proměné bude ukládat hodnota 3
+# Číslo 7. Cyklus se opakuje dokud není roven 5 do té doby se do proměné x bude ukládat hodnota 3
 x = 0
 cyklus = 0
 while cyklus < 5:
     x += 3
-    print(f"Opakování {cyklus+1}")
     
-# Číslo 8. Výsledná hodnota po pěti cyklech vypíše
+# Číslo 8. Výsledná hodnota se po pěti cyklech vypíše
     cyklus += 1
-    print(cyklus)
+    print(x)
 
-# Číslo 9. Podmínka pro uživatele ať zadá věk 1 a program odpoví "Děkuji"
-vek = int(input("Zadejte věk 1: "))
-if vek == :
+# Číslo 9. Uživatel zadá věk a isdigit zkontroluje zda je věk číslice tak program vypíše "Děkuji"
+vek = input("Zadejte věk: ")
+if vek.isdigit():
     print("Děkuji")
 else:
     print("Zadej jen celočíselnou hodnotu.")
 
-# Číslo 10. 
+# Číslo 10. Program vygeneruje náhodnou hodnotu z listu "cisla" a pak ji zapíše
 cisla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(random.choice(cisla))
 
 # Bonus k číslu 4 a 9 
+# Číslo 4. Program se opakuje dokud uživatel nezadá svůj věk
+while True:
+    vek = input("Zadejte svůj věk: ")
+    if vek.isdigit():
+        break
+
+# Číslo 9. 
+while True:
+    vek = input("Zadejte věk: ")
+    if vek.isdigit():
+        print("Děkuji")
+        break
+    else:
+        print("Zadej jen celočíselnou hodnotu.")
