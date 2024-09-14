@@ -1,32 +1,30 @@
 import random
 
-# Číslo 1. Proměna jméno
-jmeno = "Matyas"
+# Číslo 1. Proměna pro jméno
+jmeno = "Matyáš"
 
-# Číslo 2. Proměna přijímení
+# Číslo 2. Proměna pro přijmení
 prijmeni = "Polednik"
 
 # Číslo 3. Výpis proměnných do konzole
-print("jmeno" + " " + "prijmeni")
+print(jmeno + " " + prijmeni)
 
-# Číslo 4. Zadání věku uživatele
+# Číslo 4. Zadání věku 
 vek = int(input("Zadejte svůj věk: "))
 
 # Číslo 5. Výpis délek první a druhé proměné
-print(len("jmeno" + "prijmeni"))
+print(len(jmeno))
+print(len(prijmeni))
 
-# Číslo 6. Uložení hodnotu 6 do proměné
+# Číslo 6. Uložení hodnotu 6 do proměnné
 cislo = 6 
 
 # Číslo 7. Cyklus se opakuje dokud není roven 5 do té doby se do proměné x bude ukládat hodnota 3
-x = 0
-cyklus = 0
-while cyklus < 5:
-    x += 3
+for i in range(1,6):
+    cislo += 3
     
 # Číslo 8. Výsledná hodnota se po pěti cyklech vypíše
-    cyklus += 1
-    print(x)
+print(cislo)
 
 # Číslo 9. Uživatel zadá věk a isdigit zkontroluje zda je věk číslice tak program vypíše "Děkuji"
 vek = input("Zadejte věk: ")
@@ -35,18 +33,19 @@ if vek.isdigit():
 else:
     print("Zadej jen celočíselnou hodnotu.")
 
-# Číslo 10. Program vygeneruje náhodnou hodnotu z listu "cisla" a pak ji zapíše
+# Číslo 10. Program vygeneruje náhodnou číslo z listu "cisla" a pak ji uloží do proměnné "hodnota}}"
 cisla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(random.choice(cisla))
+hodnota = random.choice(cisla)
+print(hodnota)
 
 # Bonus k číslu 4 a 9 
 # Číslo 4. Program se opakuje dokud uživatel nezadá svůj věk
 while True:
     vek = input("Zadejte svůj věk: ")
     if vek.isdigit():
-        break
+         break
 
-# Číslo 9. 
+# Číslo 9. Program se opakuje dokud uživatel nezadá svůj věk
 while True:
     vek = input("Zadejte věk: ")
     if vek.isdigit():
@@ -54,3 +53,4 @@ while True:
         break
     else:
         print("Zadej jen celočíselnou hodnotu.")
+    
